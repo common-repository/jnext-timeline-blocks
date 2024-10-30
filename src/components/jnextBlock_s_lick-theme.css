@@ -1,0 +1,192 @@
+@charset 'UTF-8';
+/* Slider */
+/* .jnext_s_lick-loading .jnext_s_lick-list
+{
+    background: #fff url('fonts/jnext_s_lick/ajax-loader.gif') center center no-repeat;
+} */
+
+/* Arrows */
+.jnext_s_lick-prev,
+.jnext_s_lick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.jnext_s_lick-prev:hover,
+.jnext_s_lick-prev:focus,
+.jnext_s_lick-next:hover,
+.jnext_s_lick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.jnext_s_lick-prev:hover:before,
+.jnext_s_lick-prev:focus:before,
+.jnext_s_lick-next:hover:before,
+.jnext_s_lick-next:focus:before
+{
+    opacity: 1;
+}
+.jnext_s_lick-prev.jnext_s_lick-disabled:before,
+.jnext_s_lick-next.jnext_s_lick-disabled:before
+{
+    opacity: .25;
+}
+
+.jnext_s_lick-prev:before,
+.jnext_s_lick-next:before
+{
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.jnext_s_lick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .jnext_s_lick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.jnext_s_lick-prev:before
+{
+    content: 'â†';
+}
+[dir='rtl'] .jnext_s_lick-prev:before
+{
+    content: 'â†’';
+}
+
+.jnext_s_lick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .jnext_s_lick-next
+{
+    right: auto;
+    left: -25px;
+}
+.jnext_s_lick-next:before
+{
+    content: 'â†’';
+}
+[dir='rtl'] .jnext_s_lick-next:before
+{
+    content: 'â†';
+}
+
+/* Dots */
+.jnext_s_lick-dotted.jnext_s_lick-slider
+{
+    margin-bottom: 30px;
+}
+
+.jnext_s_lick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.jnext_s_lick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.jnext_s_lick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.jnext_s_lick-dots li button:hover,
+.jnext_s_lick-dots li button:focus
+{
+    outline: none;
+}
+.jnext_s_lick-dots li button:hover:before,
+.jnext_s_lick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.jnext_s_lick-dots li button:before
+{
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: 'â€¢';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.jnext_s_lick-dots li.jnext_s_lick-active button:before
+{
+    opacity: .75;
+    color: black;
+}

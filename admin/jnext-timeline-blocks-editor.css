@@ -1,0 +1,69 @@
+.wp-block-jnext-timeline-blocks-jnext-content-timeline,
+.wp-block-jnext-timeline-blocks-jnext-post-timeline {
+    padding: 0;
+    border: 0;
+    background: 0 0;
+}
+.gjtb-helper-class {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f7faff;
+    width: 285px !important;
+}
+.gjtb-helper-class .jtb__post-view-icon-wrap,
+.gjtb-helper-class .jtb__view-icon-wrap {
+    display: none;
+}
+.gjtb-helper-class .jtb-post-block__img img,
+.gjtb-helper-class .jtb__img img {
+    height: 240px;
+    max-width: 240px;
+}
+.gjtb-helper-class .block-remove {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background: 0 0;
+    border: unset;
+    font-size: 20px;
+    line-height: 16px;
+    width: 20px;
+    color: #fff;
+    background-color: #1f365c;
+    border-radius: 100%;
+    height: 20px;
+    z-index: 1;
+}
+.gjtb-helper-class a,
+.gjtb-helper-class p,
+.jtb-time {
+    color: #1f365c;
+    text-align: left;
+}
+.gjtb-helper-class .jtb__date-wrap,
+.gjtb-helper-class .jtb__post-block-date-wrap {
+    padding-right: 0;
+    padding-left: 0;
+}
+.gjtb-helper-class .block-remove::before {
+    top: 2px;
+    position: absolute;
+    left: 1px;
+}
+.gjtb-helper-class .jnext-post-timeline__readMore-text-link {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #1f365c;
+    color: #fff;
+    display: inline-block;
+    width: calc(240px - 40px);
+    box-shadow: 0 4px 6px 2px #9c9c9cc2;
+}
+.gjtb-helper-class .jtb-post-details .jtb__post-block-date-wrap,
+.gjtb-helper-class .jtb__detail-wrap .jtb-details .jtb__date-wrap {
+    display: none;
+}
+.jnext-post-timeline-block__horizontal .slick-dots, .jnext-timeline-block__horizontal .slick-dots{
+    bottom: -30px;
+}
